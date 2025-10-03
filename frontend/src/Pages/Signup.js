@@ -11,7 +11,7 @@ function SignUp() {
   const handleSignUp = (e) => {
     e.preventDefault();
     // Here you can call your backend API to create admin
-    console.log("Admin signed up:", { email, password });
+    console.log("Admin signed up:", { username, email, password });
     alert("Sign Up Successful!");
     setUsername("");
     setEmail("");
@@ -26,7 +26,7 @@ function SignUp() {
       <h2>Admin Sign Up</h2>
       <form onSubmit={handleSignUp}>
         <input
-          type="username"
+          type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
