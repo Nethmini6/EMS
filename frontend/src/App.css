@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafc;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+/* Employee List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #d32f2f;
+}
+
+/* card*/
+
+.employee-list {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.employee-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-3px);
+}
+
+.employee-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.employee-info p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.employee-card button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.employee-card button:hover {
+  background: #d32f2f;
+}
+
+
+.navbar nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.dashboard, .employees-page {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
