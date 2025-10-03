@@ -1,20 +1,31 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ import hook
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // ✅ initialize navigate
+  const navigate = useNavigate();
+
+  // ✅ List of allowed admins/employees
+  const users = [
+    { email: "admin1@example.com", password: "admin123" },
+    { email: "admin2@example.com", password: "pass456" },
+    { email: "admin3@example.com", password: "mypassword" }
+  ];
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // For now, simple check (you can replace with backend API)
-    if (email === "admin@example.com" && password === "admin123") {
+    // ✅ Check if entered email/password exists in users array
+    const user = users.find(
+      (u) => u.email === email && u.password === password
+    );
+
+    if (user) {
       alert("Login Successful!");
       setEmail("");
       setPassword("");
-      navigate("/dashboard"); // ✅ redirect to Dashboard
+      navigate("/dashboard"); // redirect to Dashboard
     } else {
       alert("Invalid credentials!");
     }
