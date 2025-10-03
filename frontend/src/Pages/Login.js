@@ -8,7 +8,7 @@ function Login() {
 
   // ✅ List of allowed admins/employees
   const users = [
-    { email: "admin1@example.com", password: "admin123" },
+    { email: "amal@gmail.com", password: "amal123" },
     { email: "admin2@example.com", password: "pass456" },
     { email: "admin3@example.com", password: "mypassword" }
   ];
