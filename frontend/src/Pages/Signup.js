@@ -5,17 +5,20 @@ function SignUp() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
   
+  const navigate = useNavigate();
 
   const handleSignUp = (e) => {
     e.preventDefault();
     // Here you can call your backend API to create admin
     console.log("Admin signed up:", { email, password });
     alert("Sign Up Successful!");
+    setUsername("");
     setEmail("");
     setPassword("");
-    navigate("/login");
+
+     navigate("/login");
+    
   };
 
   return (
