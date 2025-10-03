@@ -18,6 +18,14 @@ function SignUp() {
       <h2>Admin Sign Up</h2>
       <form onSubmit={handleSignUp}>
         <input
+          type="username"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+
+        <input
           type="email"
           placeholder="Email"
           value={email}
