@@ -12,9 +12,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/employees" element={<Employees />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
