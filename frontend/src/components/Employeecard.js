@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function Employeecard({ employee, deleteEmployee, index }) {
   return (
@@ -14,3 +14,4 @@ function Employeecard({ employee, deleteEmployee, index }) {
 }
 
 export default Employeecard;
+*/
