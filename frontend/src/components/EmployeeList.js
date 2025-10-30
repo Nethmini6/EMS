@@ -25,6 +25,7 @@ export default EmployeeList;*/
 
 
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
+import '../App.css';
 
 
 const EmployeeList = ({rows, selectedEmployee, deleteEmployee}) => {

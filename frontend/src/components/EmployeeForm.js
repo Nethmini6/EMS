@@ -1,5 +1,6 @@
 import { Grid, Input, Typography, Button, Paper } from "@mui/material";
 import { useEffect, useState } from "react";
+import '../App.css';
 
 
 /*function Employees() {
@@ -45,7 +46,7 @@ const EmployeeForm = ({ addEmployee, updateEmployee, submitted, data, isEdit }) 
   }, [data]);
 
   return (
-    <Paper
+    <Paper 
       elevation={6}
       className="user-form-container"
     >
