@@ -47,6 +47,7 @@ const EmployeeList = ({rows, selectedEmployee, deleteEmployee}) => {
                             <TableCell className="user-table-cell">{row.id}</TableCell>
                             <TableCell className="user-table-cell">{row.name}</TableCell>
                             <TableCell>
+                            <div className="button-group">
                                 <Button
                                     className="update-btn"
                                     variant="contained"
@@ -61,7 +62,7 @@ const EmployeeList = ({rows, selectedEmployee, deleteEmployee}) => {
                                 >
                                     Delete
                                 </Button>
-
+                            </div>
                             </TableCell>
                         </TableRow>
                     )) : (
