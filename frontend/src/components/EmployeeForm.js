@@ -2,31 +2,6 @@ import { Grid, Input, Typography, Button, Paper } from "@mui/material";
 import { useEffect, useState } from "react";
 import '../App.css';
 
-
-/*function Employees() {
-  const [employees, setEmployees] = useState([]);
-
-  const addEmployee = (employee) => {
-    setEmployees([...employees, employee]);
-  };
-
-  const deleteEmployee = (index) => {
-    const updated = employees.filter((_, i) => i !== index);
-    setEmployees(updated);
-  };
-
-  return (
-    <div className="employees-page">
-      <h2>Employee Management</h2>
-      <EmployeeForm addEmployee={addEmployee} />
-      <EmployeeList employees={employees} deleteEmployee={deleteEmployee} />
-    </div>
-  );
-}
-
-export default Employees;*/
-
-
 const EmployeeForm = ({ addEmployee, updateEmployee, submitted, data, isEdit }) => {
   const [id, setId] = useState(0);
   const [name, setName] = useState("");

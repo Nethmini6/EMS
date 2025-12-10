@@ -3,30 +3,6 @@ import EmployeeList from "../components/EmployeeList";
 import { useEffect, useState } from "react";
 import Axios from "axios";
 
-
-/*function Employees() {
-  const [employees, setEmployees] = useState([]);
-
-  const addEmployee = (employee) => {
-    setEmployees([...employees, employee]);
-  };
-
-  const deleteEmployee = (index) => {
-    const updated = employees.filter((_, i) => i !== index);
-    setEmployees(updated);
-  };
-
-  return (
-    <div className="employees-page">
-      <h2>Employee Management</h2>
-      <EmployeeForm addEmployee={addEmployee} />
-      <EmployeeList employees={employees} deleteEmployee={deleteEmployee} />
-    </div>
-  );
-}
-
-export default Employees;*/
-
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
   const [submitted, setSubmitted] = useState(false);

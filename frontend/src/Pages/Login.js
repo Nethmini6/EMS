@@ -6,9 +6,9 @@ function Login({ setIsLoggedIn }) {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // ✅ List of allowed admins/employees
+  // List of allowed admins/employees
   const users = [
-    { email: "amal@gmail.com", password: "amal123" },
+    { email: "admin1@gmail.com", password: "admin123" },
     { email: "admin2@example.com", password: "pass456" },
     { email: "admin3@example.com", password: "mypassword" }
   ];
@@ -16,7 +16,7 @@ function Login({ setIsLoggedIn }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // ✅ Check if entered email/password exists in users array
+    // Check if entered email/password exists in users array
     const user = users.find(
       (u) => u.email === email && u.password === password
     );

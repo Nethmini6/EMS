@@ -8,20 +8,8 @@ import Signup from "./Pages/Signup";
 import './App.css';
 
 function App() {
-  // Keep track of whether the user is logged in
+  
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
- /* return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/employees" element={<Employees />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </Router>
-  );*/
 
   return (
     <Router>
