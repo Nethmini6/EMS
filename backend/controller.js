@@ -1,22 +1,5 @@
-
-/* data set for get API
-
-const users = [
-    {
-        id: 1,
-        name: 'Amal',
-    },
-    {
-        id: 2,
-        name: 'Nimal',
-    },
-]; */
-
 const { response } = require('express');
 const Employee = require('./model');
-
-
-
 
 /* function to return data set*/
 
